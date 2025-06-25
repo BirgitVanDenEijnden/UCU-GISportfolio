@@ -22,7 +22,7 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Home</span>
+									<span class="symbol"><img src="images/icon.png" alt="" /></span><span class="title">Home</span>
 								</a>
 
 							<!-- Nav -->
@@ -52,13 +52,18 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
+						<h1>Vector Map</h1>
+						<h2>Vector Analysis of Utrecht City Center</h2>
+						<p>Vector data is a representation of the world using points, lines, and polygons. This data stores information in x and y coordinates. Using ArcGIS online, an interactive map of vector data of political stickers and Rijksmonumenten (National Heritage Site) in the city center of Utrecht was made. The data on political stickers was collected by students using mobile GIS. The data on Rijksmonumenten was uploaded from the online ArcGIS database. </p>
 							<iframe 
 								style="height:600px;width:700px;" 
 								src="https://uni-utrecht.maps.arcgis.com/apps/instant/basic/index.html?appid=6a1edd7a8063437ea4863d2f291f1f4f" 
 								title="ArcGIS Vector Map">
 							
 							</iframe>
-							
+						<h2>Methods and Observations</h2>
+						<p>The vector data on Rijksmonumenten for a small region in the city center of Utrecht was aggregated into hexagons to allow for easy visualization and comparison. This data was linked to the vector data on political stickers. Finally, I conducted a Hot Spot analysis to identify hot spots and cold spots of Rijksmonumenten in the region of interest. ‘Count of points’ represents the number of Rijksmonumenten and ‘Joint_count’ represents the count of political stickers.</p>
+						<p>The region in the heart of the city center contained mainly statistically significant hot spots, which are regions with a high number of Rijksmonumenten. This was expected based on the historic character of this region. Around this region we can see a band of non-significant spots. Regions towards the periphery of the city center contain mainly statistically significant cold spots, indicating a lower number of Rijksmonumenten. No pattern could be found between political posters and Rijksmonumenten, and more data on political posters is required. </p>
 						</div>
 						
 					</div>
