@@ -110,7 +110,7 @@
 		// change class breaks and color depending on your values //UPDATE for our own legend - use colorbrewer.org for ideas for colors
 		//UPDATE legend to match the classes you coded - and the source of your data needs to reference the correct link
 	info.update = function (props) {
-		const contents = props ? `<b>${props.NAME_LONG}</b><br />${props.whole2} % of total land that is forest` : 'Hover over a state';
+		const contents = props ? `<b>${props.UN_wtr_qual_web2}</b><br />${props.whole2} % of total land that is forest` : 'Hover over a state';
 		this._div.innerHTML = `<h4>15.1.1 Forest area as a proportion of total land area</h4>${contents}`;
 	};
 
