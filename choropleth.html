@@ -46,7 +46,7 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Home</span>
+									<span class="symbol"><img src="images/icon.png" alt="" /></span><span class="title">GIS Portfolio Birgit van den Eijnden</span>
 								</a>
 
 							<!-- Nav -->
@@ -76,14 +76,22 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Choropleth Map</h1>
-							<p>Describe the map - SDG here.</p>
+							<h1>Mapping Sustainable Development</h1>
+							<h2>Choropleth Maps</h2>
+							<p>This page shows a static and interactive choropleth map based on the UN Sustainable Development Goals. Both maps show the sustainable development indicator 6.3.2, proportion of bodies with water with good ambient water quality. The indicator is defined as the proportion of water bodies in the country that have good ambient water quality. Ambient water quality refers to natural, untreated water in rivers, lakes and groundwaters and represents a combination of natural influences together with the impact of all anthropogenic activities. The indicator relies on water quality data derived from on site measurements and the analysis of samples collected from surface and groundwaters. The metadata of this indicator is available [online](https://www.unep.org/goal-6-clean-water-and-sanitation/indicator-632).</p> 
+
+							<p>The indicator is part of Goal 6: Ensure availability and sustainable management of water and sanitation for all. The corresponding target is Target 6.3: by 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally. Focusing on this indicator will allow to identify regions that hold potential to improve water quality.</p>
 							<span class="image main"><img src="images/UN_wrt_qual_final3-2.jpg" alt="" /></span>
-							
 							<h1>Leaflet</h1>
-							<p>We made this example in class on day 2</p>
-					
-					<!-- UPDATE - add your leaflet code here! I already added the necessary headers - make sure you move your js file into the root directory too -->
+							<p>A choropleth map can be used to visualize how a variable varies across a geographic area, where color darkness represents the value of a variable. A choropleth map has many benefits. Because they are easy to make, it is a commonly used map and thus familiar among broad audiences. They are simple and clean, yet they provide a good overview of general trends. They are especially useful for data tied to borders.</p>
+
+							<p>However, a choropleth map also has its limitations. Firstly, larger areas, such as large countries, on a map might draw more attention compared to small areas, such as small islands. In addition, absolute values need to be normalized into relative values to enable comparison between different areas. It is also not possible to estimate exact numerical values from the colors on the map, and differences or problems with perception of color among audiences might pose further difficulties or inconsistencies. Lastly, the visual representation of data in a map might differ when choosing different boundaries (Modifiable Areal Unit Problem).</p>
+
+							<h2>Methods</h2>
+							<p>The static choropleth map was made using QGIS. After cleaning the datafile, I combined a UN geodatabase, containing a shapefile of a worldmap of all countries, with openly available data on my SGD indicator from the UN. I used a graduated color scheme with equal interval class breaks, to allow for comparison between countries. I chose blue colors, as this color is both neutral and fitting for a water related SDG goal. Finally, I decided to highlight countries with a proportion of water bodies with good ambient water quality lower than 10%, as these regions could hold potential for improvement. An interactive map was made using Leaflet. </p>
+							<h2>Observations</h2>
+							<p>10 countries were identified with a proportion lower than 10%. These countries were predominantly located in Europe and Africa, except for Israël in Asia and Antingua and Barbuda in North-America. In addition, several countries in Europe and Africa showed a 100% percentage. However, many countries are missing data on this indicator, highlighting the need for further data collection to acquire a complete image of worldwide ambient water quality. </p>
+							<!-- UPDATE - add your leaflet code here! I already added the necessary headers - make sure you move your js file into the root directory too -->
 							<div id='map'></div>
 <script type="text/javascript" src="UN_wtr_qual_web2.js"></script>
 <script type="text/javascript">
